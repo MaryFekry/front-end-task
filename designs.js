@@ -1,19 +1,26 @@
 // Select color input
+
+//colorPickerVal = $('#colorPicker').val()
+//console.log(colorPickerVal)
+//$('table tr td').on('click',function(){
+//        $(this).css('background-color',colorPickerVal)
+//    })
 $('#colorPicker').on('change',function(){
     colorPickerVal = $(this).val()
     $('table tr td').on('click',function(){
         $(this).css('background-color',colorPickerVal)
-        console.log(colorPickerVal)
     })
 })
 
 
 // Select size input
+InputHeight = $('#inputHeight').val()
 $('#sizePicker #inputHeight').on('change',function(){
     
      InputHeight = $(this).val()
 })
 
+InputWidth = $('#inputWidth').val()
 $('#sizePicker #inputWidth').on('change',function(){
     
     InputWidth = $(this).val()
